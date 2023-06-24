@@ -1,0 +1,23 @@
+        {
+            "background": "#0077c2",
+            "foreground": "#ffffff",
+            "invert_powerline": true,
+            "style": "diamond",
+            "template": "<#0077c2,transparent>\ue0b2</> \ue641 {{ .CurrentDate | date .Format }} <transparent,#0077c2>\ue0b2</>",
+            "type": "time",
+            "properties": {
+                "time_format": "15:04:05"
+            }
+        },
+        {
+            "background": "#0077c2",
+            "foreground": "#ffffff",
+            "invert_powerline": true,
+            "style": "diamond",
+            "template": "<#0077c2,transparent>\ue0b2</> \uf073 {{ .CurrentDate | date .Format }} ",
+            "trailing_diamond": "\ue0b4",
+            "type": "time",
+            "properties": {
+                "time_format": "02-01-2006"
+            }
+        }
