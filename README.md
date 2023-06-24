@@ -14,7 +14,7 @@ Windows Powershell setup:
 
 Linux Bash setup:
 1. curl -s https://ohmyposh.dev/install.sh | bash -s
-2. Install a Nerd font: oh-my-posh font install FONT
+2. Install a Nerd font: oh-my-posh font install FONT > 
     Nerd fonts: https://www.nerdfonts.com/font-downloads
 3. Add the following line to .bashrc to load the default theme: eval "$(oh-my-posh init bash)"
 4. Load the default profile: exec bash
