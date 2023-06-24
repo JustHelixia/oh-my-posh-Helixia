@@ -1,4 +1,4 @@
-# oh-my-posh-Mandy
+# oh-my-posh-Helxia
 Here I add my custom oh-my-posh files.
 
 Windows Powershell setup:
