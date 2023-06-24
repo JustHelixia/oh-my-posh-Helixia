@@ -1,0 +1,95 @@
+{
+    "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+    "final_space": true,
+    "version": 2,
+    "blocks": [
+      {
+        "type": "prompt",
+        "alignment": "left",
+        "newline": true,
+        "segments": [
+          {
+            "powerline_symbol": "\uE0B0",
+            "foreground": "#ffffff",
+            "background": "#E95420",
+            "leading_diamond": "\u256d\u2500\ue0b6",
+            "style": "diamond",
+            "template": " {{ if .WSL }}{{ end }}{{.Icon}} {{ .UserName }}@{{ .HostName }} ",
+            "type": "os",
+            "properties": {
+            "style": "full"
+            }
+          },
+          {
+            "background": "#333333",
+            "foreground": "#E4E4E4",
+            "style": "diamond",
+            "leading_diamond": "<#E95420,#333333>\ue0b0</>",
+            "trailing_diamond": "",
+            "template": " {{ .Path }} ",
+            "type": "path",
+            "properties": {
+              "style": "full"
+            }
+          }
+        ]
+      },
+      {
+        "alignment": "right",
+        "segments": [
+        {
+            "background": "#E95420",
+            "foreground": "#ffffff",
+            "properties": {
+              "style": "roundrock",
+              "threshold": 0
+            },
+            "style": "diamond",
+            "template": "<#E95420,transparent>\ue0b6</> {{ .FormattedMs }} <transparent,#E95420>\ue0b2</>",
+            "type": "executiontime"
+        },
+        {
+            "foreground": "#ffffff",
+            "background": "#E95420",
+            "style": "diamond",
+            "template": "<#E95420,transparent>\ue0b2</> \ue266  {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB <transparent,#E95420>\ue0b2</>",
+            "type": "sysinfo"
+        },
+        {
+            "foreground": "#ffffff",
+            "background": "#E95420",
+            "style": "diamond",
+            "template": "<#E95420,transparent>\ue0b2</> \ue641 {{ .CurrentDate | date .Format }} ",
+            "type": "time",
+            "trailing_diamond": "\ue0b4"
+        }
+        ],
+        "type": "prompt"
+      },
+      {
+        "alignment": "left",
+        "newline": true,
+        "segments": [
+          {
+            "foreground": "#E95420",
+            "style": "plain",
+            "template": "\u2570\u2500",
+            "type": "text"
+          },
+          {
+            "foreground": "#FCE5DE",
+            "foreground_templates": [
+              "{{ if gt .Code 0 }}#ef5350{{ end }}"
+            ],
+            "properties": {
+              "always_enabled": true
+            },
+            "style": "plain",
+            "template": "\u276f ",
+            "type": "exit"
+          }
+        ],
+        "type": "prompt"
+      }
+    ]
+  }
