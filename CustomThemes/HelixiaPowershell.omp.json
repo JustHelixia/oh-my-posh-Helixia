@@ -26,7 +26,7 @@
             "style": "diamond",
             "leading_diamond": "<#035191,#444444>\ue0b0</>",
             "trailing_diamond": "",
-            "template": " {{ .Path }} ",
+            "template": " \ue5ff {{ .Path }} ",
             "type": "path",
             "properties": {
               "style": "full"
@@ -91,5 +91,12 @@
         ],
         "type": "prompt"
       }
-    ]
+    ],
+    "console_title_template": "{{ .Shell }} in {{ .Folder }}",
+    "final_space": true,
+    "transient_prompt": {
+      "background": "transparent",
+      "foreground": "#FFD700",
+      "template": "{{if .Root}}\u26a1 {{end}}🚀 "
+    }
   }
