@@ -18,5 +18,6 @@ Linux Bash setup:
     Nerd fonts: https://www.nerdfonts.com/font-downloads
 3. Add the following line to .bashrc to load the default theme: eval "$(oh-my-posh init bash)"
 4. Load the default profile: exec bash
-5. Replace the last line to .bashrc to load a custom theme: eval "$(oh-my-posh init bash --config /mnt/c/Users/<WINDOWSUSERNAME>/Appdata/local/Programs/oh-my-posh/themes/themename.omp.json)"
+5. Replace the last line to .bashrc to load a custom theme: 
+   eval "$(oh-my-posh init bash --config /mnt/c/Users/<WINDOWSUSERNAME>/Appdata/local/Programs/oh-my-posh/themes/themename.omp.json)"
 6. Load the custom profile: exec bash
