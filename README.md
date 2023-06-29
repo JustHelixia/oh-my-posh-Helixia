@@ -1,5 +1,5 @@
 # oh-my-posh-Helxia
-This repo is a place where I share and store my config files oh-my-posh.
+This repo is a place where I share and store my config files for oh-my-posh.
 
 Oh-my-posh repo: https://github.com/JanDeDobbeleer/oh-my-posh
 
