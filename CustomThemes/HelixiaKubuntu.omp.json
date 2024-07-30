@@ -45,7 +45,7 @@
               "threshold": 0
             },
             "style": "diamond",
-            "template": "<#E95420,transparent>\ue0b6</> {{ .FormattedMs }} <transparent,#E95420>\ue0b2</>",
+            "template": "<#20B3E8,transparent>\ue0b6</> {{ .FormattedMs }} <transparent,#20B3E8>\ue0b2</>",
             "type": "executiontime"
         },
         {
