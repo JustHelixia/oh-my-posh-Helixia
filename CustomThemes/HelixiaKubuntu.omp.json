@@ -11,7 +11,7 @@
           {
             "powerline_symbol": "\uE0B0",
             "foreground": "#ffffff",
-            "background": "#20B3E8",
+            "background": "#0978BD",
             "leading_diamond": "\u256d\u2500\ue0b6",
             "style": "diamond",
             "template": " {{ if .WSL }}{{ end }}{{.Icon}} {{ .UserName }}@{{ .HostName }} ",
@@ -24,7 +24,7 @@
             "background": "#333333",
             "foreground": "#E4E4E4",
             "style": "diamond",
-            "leading_diamond": "<#20B3E8,#333333>\ue0b0</>",
+            "leading_diamond": "<#0978BD,#333333>\ue0b0</>",
             "trailing_diamond": "",
             "template": " \ue5ff {{ .Path }} ",
             "type": "path",
@@ -38,28 +38,28 @@
         "alignment": "right",
         "segments": [
         {
-            "background": "#20B3E8",
+            "background": "#0978BD",
             "foreground": "#ffffff",
             "properties": {
               "style": "roundrock",
               "threshold": 0
             },
             "style": "diamond",
-            "template": "<#20B3E8,transparent>\ue0b6</> {{ .FormattedMs }} <transparent,#20B3E8>\ue0b2</>",
+            "template": "<#0978BD,transparent>\ue0b6</> {{ .FormattedMs }} <transparent,#0978BD>\ue0b2</>",
             "type": "executiontime"
         },
         {
             "foreground": "#ffffff",
-            "background": "#20B3E8",
+            "background": "#0978BD",
             "style": "diamond",
-            "template": "<#20B3E8,transparent>\ue0b2</> \ue266  {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB <transparent,#20B3E8>\ue0b2</>",
+            "template": "<#0978BD,transparent>\ue0b2</> \ue266  {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB <transparent,#0978BD>\ue0b2</>",
             "type": "sysinfo"
         },
         {
             "foreground": "#ffffff",
-            "background": "#20B3E8",
+            "background": "#0978BD",
             "style": "diamond",
-            "template": "<#20B3E8,transparent>\ue0b2</> \ue641 {{ .CurrentDate | date .Format }} ",
+            "template": "<#0978BD,transparent>\ue0b2</> \ue641 {{ .CurrentDate | date .Format }} ",
             "type": "time",
             "trailing_diamond": "\ue0b4"
         }
