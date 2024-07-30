@@ -24,7 +24,7 @@
             "background": "#333333",
             "foreground": "#E4E4E4",
             "style": "diamond",
-            "leading_diamond": "<#E95420,#333333>\ue0b0</>",
+            "leading_diamond": "<#20B3E8,#333333>\ue0b0</>",
             "trailing_diamond": "",
             "template": " \ue5ff {{ .Path }} ",
             "type": "path",
