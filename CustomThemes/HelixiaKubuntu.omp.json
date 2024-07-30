@@ -71,7 +71,7 @@
         "newline": true,
         "segments": [
           {
-            "foreground": "#20B3E8",
+            "foreground": "#0978BD",
             "style": "plain",
             "template": "\u2570\u2500",
             "type": "text"
@@ -79,7 +79,7 @@
           {
             "foreground": "#FCE5DE",
             "foreground_templates": [
-              "{{ if gt .Code 0 }}#ef5350{{ end }}"
+              "{{ if gt .Code 0 }}#EF5350{{ end }}"
             ],
             "properties": {
               "always_enabled": true
