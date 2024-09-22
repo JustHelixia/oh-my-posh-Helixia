@@ -52,7 +52,7 @@
             "foreground": "#ffffff",
             "background": "#0978BD",
             "style": "diamond",
-            "template": "<#0978BD,transparent>\ue0b2</> \ue266  {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB <transparent,#0978BD>\ue0b2</>",
+            "template": "<#0978BD,transparent>\ue0b2</> \ue266  {{ (div ((sub .PhysicalTotalMemory .PhysicalUsedMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB <transparent,#0978BD>\ue0b2</>",
             "type": "sysinfo"
         },
         {
