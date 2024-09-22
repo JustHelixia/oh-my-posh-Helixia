@@ -90,7 +90,7 @@
             "foreground": "#ffffff",
             "invert_powerline": true,
             "style": "diamond",
-            "template": " \ue266  {{ (div ((sub .PhysicalTotalMemory .PhysicalUsedMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB ",
+            "template": " \ue266  {{ (div ((sub .PhysicalTotalMemory .PhysicalFreeMemory)|float64) 1000000000.0) }}/{{ (div .PhysicalTotalMemory 1000000000.0) }}GB ",
             "type": "sysinfo"
           },
           {
